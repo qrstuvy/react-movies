@@ -22,7 +22,7 @@ function App() {
 <Routes >
 <Route path="/" element={<MoviesListPage movies={movies} />}/>
 <Route path="/actors" element={<ActorsListPage movies={movies} />}/>
-<Route path="/movies/:title" element={<MovieDetailPage movies={movies}/>} />
+<Route path="/movies/:movieTitle" element={<MovieDetailPage movies={movies}/>} />
 </Routes></> : <LoginPage setUser={setUser}/>}
     </div>
   );
