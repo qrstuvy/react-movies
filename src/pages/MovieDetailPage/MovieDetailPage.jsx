@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom"
 
 function MovieDetailPage({movies}){   
     const movieTitle = useParams()
-    console.log(movieTitle)
     const movie = movies.find(movie => movie.title === movieTitle.title)
     return(
         <>

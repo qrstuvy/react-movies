@@ -7,15 +7,11 @@ function ActorsListPage({movies}){
         })
         const actorSet = new Set(actorList)
         const actorArray = Array.from(actorSet)
-        const actors = actorArray.map((actor, i) => {
-            return(
-                        <ActorCard key={i} actor={actor} i={i} />
-            )
-        })
             return ( 
             <>
             <h1>Actors List Page</h1>
-            {actors}
+            {actorArray.map((actor, i) => <ActorCard key={i} actor={actor} i={i} />
+            )}
             </>  
        ) }
 
